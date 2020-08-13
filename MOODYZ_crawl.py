@@ -30,7 +30,7 @@ for str in src:
 #     time.sleep(0.1)
 #     r = requests.get(src1)
 #     picture_name = src1.split('/')[-1]
-#     with open('20200806/' + picture_name, "wb")as f:
+#     with open('20200813/' + picture_name, "wb")as f:
 #         f.write(r.content)
 
 ##内容提取
@@ -44,8 +44,11 @@ for wn in work_num:
     html_wn = BeautifulSoup(res_wn.text, features="lxml")
     introduces.append(html_wn.find('div', {'works-detail-desc-tx'}).text.replace("\n", ""))
     name_bridge = html_wn.find('ul', {'works-detail-info--actress'})
-    name_bridge_2 = name_bridge.find('li', {'js-toggle-target--actress'}).text.replace("\n", "")
-    actress_name.append(name_bridge_2[4:])
+    if name_bridge is None:
+        actress_name.append(None)
+    else:
+        name_bridge_2 = name_bridge.find('li', {'js-toggle-target--actress'}).text.replace("\n", "")
+        actress_name.append(name_bridge_2[4:])
     date_bridge = html_wn.find('ul', {'works-detail-info'})
     date.append(date_bridge.find(string=re.compile("2020")))
     duration_bridge = html_wn.find_all('div', {'works-detail-inner'})
@@ -53,20 +56,23 @@ for wn in work_num:
     duration.append(duration_bridge_2[4].text.replace("\n", ""))
 
 
-# url = 'https://www.moodyz.com/works/detail/miaa279/'
+# url = 'https://www.moodyz.com/works/detail/miaa304/'
 # res_wn = requests.get(url)
 # html_wn = BeautifulSoup(res_wn.text, features="lxml")
 # introduces.append(html_wn.find('div', {'works-detail-desc-tx'}).text.replace("\n", ""))
 # name_bridge = html_wn.find('ul', {'works-detail-info--actress'})
-# name_bridge_2 = name_bridge.find('li', {'js-toggle-target--actress'}).text.replace("\n", "")
-# actress_name.append(name_bridge_2[4:])
+# if name_bridge is None:
+#     actress_name.append(None)
+# else:
+#     name_bridge_2 = name_bridge.find('li', {'js-toggle-target--actress'}).text.replace("\n", "")
+#     actress_name.append(name_bridge_2[4:])
 # date_bridge = html_wn.find('ul', {'works-detail-info'})
 # date.append(date_bridge.find(string=re.compile("2020")))
 # duration_bridge = html_wn.find_all('div', {'works-detail-inner'})
 # duration_bridge_2 = duration_bridge[1].find_all('li')
 # duration.append(duration_bridge_2[4].text)
-
-
+#
+# print(name_bridge)
 
 
 
@@ -82,4 +88,4 @@ data = {
     '时长': duration
 }
 df = pd.DataFrame(data)
-df.to_csv("C:/Users/RHB/Desktop/graduated/coding/MOODYZ_crawl/20200806/data.csv", encoding='utf_8_sig')
+df.to_csv("C:/Users/RHB/Desktop/graduated/coding/MOODYZ_crawl/20200813/data.csv", encoding='utf_8_sig')
