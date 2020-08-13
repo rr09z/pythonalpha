@@ -5,3 +5,6 @@
 5.
 6.from a表 ()jpin b表
 7.select 中 可用 函数（）+as命名
+8.
+9.
+10.not in 的使用和多重select
