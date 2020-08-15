@@ -11,3 +11,9 @@
 11.<>为不等于
 12.复杂，再理解理解
 13.基础，group by 与聚合函数一起用 –第一步：执行FROM –第二步：WHERE条件过滤 –第三步：GROUP BY分组 –第四步：执行SELECT投影列 –第五步：HAVING条件过滤 –第六步：执行ORDER BY 排序
+14.'distinct' can be used after 'select'
+15.odd=%2=1; if you want to limit a string, you need to quote it by ''
+16.distinguish which is the left table
+17.limit 函数,注意多值相等的情况
+18.max函数的使用和select的嵌套
+19.三表合并和left join 与 join的使用
