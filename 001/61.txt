@@ -9,7 +9,7 @@
 9.
 10.not in 的使用和多重select
 11.<>为不等于
-12.复杂，再理解理解
+12.复杂，再理解理解######################################################
 13.基础，group by 与聚合函数一起用 –第一步：执行FROM –第二步：WHERE条件过滤 –第三步：GROUP BY分组 –第四步：执行SELECT投影列 –第五步：HAVING条件过滤 –第六步：执行ORDER BY 排序
 14.'distinct' can be used after 'select'
 15.odd=%2=1; if you want to limit a string, you need to quote it by ''
@@ -17,3 +17,9 @@
 17.limit 函数,注意多值相等的情况
 18.max函数的使用和select的嵌套
 19.三表合并和left join 与 join的使用
+20.在select中使用max-min完成求差值(非最佳）最佳为分别select选出第一个和最后一个数据
+21.思路与上题类似，分别选出入职和现在的薪水再处理
+22.计算数量的函数为COUNT
+23.创造新的一列作为rank，记得groupby，orderby连用用‘，’间隔
+24.
+25.中心表是salaries表，再分析分析复习一下##########################################
