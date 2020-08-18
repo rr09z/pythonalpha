@@ -33,5 +33,5 @@
 33.create table 的相关指令,每条创建后要有‘，’，primary key的设置，default设置
 34.insert使用，values 和 union select
 35.insert or ignore 用作插入，已有则忽略
-36.
+36.先建表，再用insert into 插入，还是养成末尾+；吧
 37.
