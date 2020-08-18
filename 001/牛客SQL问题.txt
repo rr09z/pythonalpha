@@ -31,7 +31,7 @@
 31.miss待补充
 32.表中不同的单元拼接问题
 33.create table 的相关指令,每条创建后要有‘，’，primary key的设置，default设置
-34.
+34.insert使用，values 和 union select
 35.
 36.
 37.
