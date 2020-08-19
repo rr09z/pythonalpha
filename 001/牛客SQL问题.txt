@@ -39,6 +39,6 @@
 39.SQLite中，使用 INDEXED BY 语句进行强制索引查询,MySQL中，使用 FORCE INDEX 语句进行强制索引查询
 40.在表中添加列， alter table XXXXX 
 41.触发器的构造
-42.
-43.
+42.主要在于delete 和 not in语句的使用
+43.UPDATE table_name SET column1=value1,column2=value2,... WHERE some_column=some_value;
 
