@@ -35,3 +35,10 @@
 35.insert or ignore 用作插入，已有则忽略
 36.先建表，再用insert into 插入，还是养成末尾+；吧
 37.创建索引：CREATE (UNIQUE) INDEX ... ON table('value')
+38.crate view的使用
+39.
+40.
+41.
+42.
+43.
+
