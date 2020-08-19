@@ -36,7 +36,7 @@
 36.先建表，再用insert into 插入，还是养成末尾+；吧
 37.创建索引：CREATE (UNIQUE) INDEX ... ON table('value')
 38.crate view的使用
-39.
+39.SQLite中，使用 INDEXED BY 语句进行强制索引查询,MySQL中，使用 FORCE INDEX 语句进行强制索引查询
 40.
 41.
 42.
