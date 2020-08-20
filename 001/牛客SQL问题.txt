@@ -44,7 +44,7 @@
 44.replace into table values(*)
 45.表名更改， alter table 表名 rename to XXX
 46.foreign key（）references 表（key）
-48.
+48.思路在于联表，再用in去锁定emp_no
 49.
 50.
 
