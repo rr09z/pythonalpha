@@ -42,8 +42,8 @@
 42.主要在于delete 和 not in语句的使用
 43.UPDATE table_name SET column1=value1,column2=value2,... WHERE some_column=some_value;
 44.replace into table values(*)
-45.
-46.
+45.表名更改， alter table 表名 rename to XXX
+46.foreign key（）references 表（key）
 48.
 49.
 50.
