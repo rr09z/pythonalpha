@@ -45,6 +45,6 @@
 45.表名更改， alter table 表名 rename to XXX
 46.foreign key（）references 表（key）
 48.思路在于联表，再用in去锁定emp_no
-49.在 SQLite 系统表 sqlite_master 中可以获得所有表的索引，其中字段 name 是所有表的名字，而且对于自己创建的表而言，字段 type 永远是 'table',然后再用||连接
+49.在 SQLite 系统表 sqlite_master 中可以获得所有表的索引，其中字段 name 是所有表的名字，而且对于自己创建的表而言，字段 type 永远是 'table',然后再用||连接【Mysql中的用法怎么样？】
 50.用||连接内容，记得连接间隔用的内容要用“”引出
 
