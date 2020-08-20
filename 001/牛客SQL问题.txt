@@ -41,4 +41,10 @@
 41.触发器的构造
 42.主要在于delete 和 not in语句的使用
 43.UPDATE table_name SET column1=value1,column2=value2,... WHERE some_column=some_value;
+44.
+45.
+46.
+47.
+48.
+49.
 
