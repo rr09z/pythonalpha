@@ -56,7 +56,7 @@
 56.let join使得不在bouns表中的显示为null
 57.exists用语从表比主表大的时候效率更高 where exists/not exists
 58.对view的选择似乎跟对table的选择一致
-59.
+59.case语句用法，在select中使用
 60.
 61.
 
