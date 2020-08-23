@@ -53,8 +53,8 @@
 54.attention：子查询只能查询单个字段
 55.用not in 把最大值和最小值选出来
 56.用limit函数达成分页和跳页的目标
-56.
-57.
+56.let join使得不在bouns表中的显示为null
+57.exists用语从表比主表大的时候效率更高 where exists/not exists
 58.对view的选择似乎跟对table的选择一致
 59.
 60.
