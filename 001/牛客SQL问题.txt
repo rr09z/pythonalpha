@@ -57,6 +57,6 @@
 57.exists用语从表比主表大的时候效率更高 where exists/not exists
 58.对view的选择似乎跟对table的选择一致
 59.case语句用法，在select中使用
-60.
-61.
+60.本题的思路为复用 salaries 表进行子查询,并用emp_no进行顺序识别
+61.三层结构：从一个有FN，有排序的表中选奇数列——选出有FN有排序的表——制造排序
 
