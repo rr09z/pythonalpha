@@ -62,8 +62,8 @@
 62.注意一点，不要group by primary key
 63.用count distinct构造rank
 64.
-65.
-66.
+65.rank函数看看
+66.条件选择问题，要更熟悉
 67.用group by 函数实现
 
 
