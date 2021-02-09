@@ -1,0 +1,68 @@
+import sys
+
+
+class weishengwu(object):
+    count = 0
+    X = 1
+    Y = 2
+
+    def __init__(self, name):
+        self.name = name
+
+
+    def eat(self):
+        print(self.name + " is eating")
+
+    @staticmethod
+    def info(name):
+        print(name)
+
+    @classmethod
+    #可以调用类属性,但是不能对实例进行操作
+    def test(cls, name):
+        result = cls.X + cls.Y
+        print(name + 'a')
+        print(result)
+
+
+class human(weishengwu):
+    def __init__(self, name, love):
+        weishengwu.__init__(self, name)
+        self.love = love
+
+    def move(self):
+        print(self.name + ' is moving')
+
+    def work(self):
+        print(self.name + " is working")
+
+    def loves(self):
+        print(self.name + ' love ' + self.love)
+
+    def feature(self):
+        self.eat()
+        self.move()
+        self.work()
+
+
+class weishengwu2(weishengwu):
+    def __init__(self, name):
+        self.name = name
+        print(self.name)
+
+
+if __name__ == '__main__':
+    b1 = weishengwu("b1")
+    b1.eat()
+    b2 = human('xiaoming', 'apple')
+    b2.feature()
+    b2.loves()
+    b2.eat()
+    b3 = weishengwu2('b3')
+    b3.eat()
+    b3.info(1)
+    b3.test('fuck')
+    # weishengwu.test('oh?')
+    # weishengwu.info('oh no')
+    # print(b3.name)
+    # b3.info('but')
